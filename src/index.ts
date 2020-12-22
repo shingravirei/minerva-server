@@ -7,7 +7,7 @@ const PORT = 3000;
 const app = new Koa();
 const router = new Router();
 
-router.get('/', (ctx: Context) => {
+router.get('/', async (ctx: Context) => {
     ctx.body = { hello: 'world' };
 });
 
