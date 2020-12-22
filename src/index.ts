@@ -1,20 +1,15 @@
-import Koa, { Context } from 'koa';
-import Router from '@koa/router';
+import Koa from 'koa';
 import bodyParser from 'koa-bodyparser';
 import logger from 'koa-logger';
+import { PORT } from './config';
+import authRouter from './auth';
 
-const PORT = 3000;
 const app = new Koa();
-const router = new Router();
-
-router.get('/', async (ctx: Context) => {
-    ctx.body = { hello: 'world' };
-});
 
 app.use(logger());
 app.use(bodyParser());
-app.use(router.routes());
-app.use(router.allowedMethods());
+app.use(authRouter.routes());
+app.use(authRouter.allowedMethods());
 
 app.listen(PORT, () => {
     console.log(`Listening on port ${PORT}...`);
