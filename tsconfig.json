@@ -61,7 +61,9 @@
   },
   "include": [
     "src/**/*",
-    "tests/**/*"
+    "tests/**/*",
+    "prettier.config.js",
+    "jest.config.js"
   ],
   "exclude": [
     "node_modules",
