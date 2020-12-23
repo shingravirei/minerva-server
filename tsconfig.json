@@ -63,7 +63,9 @@
     "src/**/*",
     "tests/**/*",
     "prettier.config.js",
-    "jest.config.js"
+    "jest.config.js",
+    "knexfile.ts",
+    "migrations"
   ],
   "exclude": [
     "node_modules",

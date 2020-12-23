@@ -8,10 +8,7 @@
         "build": "tsc -p .",
         "start": "node ./dist/src/index.js",
         "test": "jest --watch",
-        "clean": "rm -rf ./dist/*",
-        "migrate:run": "tsnd ./node_modules/typeorm/cli.js migration:run",
-        "migrate:revert": "tsnd ./node_modules/typeorm/cli.js migration:revert",
-        "migrate:generate": "tsnd ./node_modules/typeorm/cli.js migration:generate -n"
+        "clean": "rm -rf ./dist/*"
     },
     "keywords": [
         "typescript",
@@ -42,12 +39,12 @@
         "bcrypt": "^5.0.0",
         "dotenv": "^8.2.0",
         "install": "^0.13.0",
+        "knex": "^0.21.14",
         "koa": "^2.13.0",
         "koa-joi-router": "^7.0.0",
         "koa-logger": "^3.2.1",
         "npm": "^7.3.0",
-        "reflect-metadata": "^0.1.13",
-        "sqlite3": "^5.0.0",
-        "typeorm": "^0.2.29"
+        "objection": "^2.2.3",
+        "sqlite3": "^5.0.0"
     }
 }

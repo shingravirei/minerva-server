@@ -2,8 +2,8 @@ POST http://localhost:3000/user HTTP/1.1
 Content-Type: application/json
 
 {
-    "username": "some",
-    "email": "some@some.com",
+    "username": "other",
+    "email": "other@some.com",
     "password": "other",
     "repeatPassoword": "other"
 }
