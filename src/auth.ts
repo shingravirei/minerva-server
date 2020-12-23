@@ -1,6 +1,7 @@
 import bcrypt from 'bcrypt';
 import { Context } from 'koa';
 import router, { Config } from 'koa-joi-router';
+// import User from './entity/User';
 
 const { Joi } = router;
 
