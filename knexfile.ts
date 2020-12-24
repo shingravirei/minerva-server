@@ -1,9 +1,17 @@
 // Update with your config settings.
-export default {
+module.exports = {
     development: {
         client: 'sqlite3',
         connection: {
             filename: './dev.db',
+        },
+        useNullAsDefault: false,
+    },
+
+    test: {
+        client: 'sqlite3',
+        connection: {
+            filename: './test.db',
         },
         useNullAsDefault: false,
     },

@@ -4,6 +4,5 @@ Content-Type: application/json
 {
     "username": "other",
     "email": "other@some.com",
-    "password": "other",
-    "repeatPassoword": "other"
+    "password": "other"
 }

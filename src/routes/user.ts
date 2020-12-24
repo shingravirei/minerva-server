@@ -1,8 +1,8 @@
 import bcrypt from 'bcrypt';
 import { Context } from 'koa';
 import { Config, Router } from 'koa-joi-router';
-import { Joi } from './config';
-import User from './Models/User';
+import { Joi } from '../config';
+import User from '../Models/User';
 
 export default (router: Router) => {
     const userValidation: Config = {
