@@ -25,4 +25,21 @@ export default (router: Router) => {
 
         ctx.status = 201;
     });
+
+    router.delete('/user/:id', async (ctx: Context) => {
+        const id = Number(ctx.params.id);
+        const stateId: number = ctx.state.user.id;
+
+        if (id === stateId) {
+            const result = await User.query().deleteById(id);
+
+            if (result === 0) {
+                ctx.status = 404;
+
+                return;
+            }
+
+            ctx.status = 204;
+        }
+    });
 };
