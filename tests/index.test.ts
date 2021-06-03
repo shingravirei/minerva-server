@@ -29,7 +29,7 @@ describe('/user', () => {
         expect(res.status).toBe(201);
     });
 
-    test('it shoult respond with 409', async () => {
+    test('it should respond with 409', async () => {
         const res = await request(server).post('/user').send(user);
 
         expect(res.status).toBe(409);
