@@ -43,7 +43,7 @@
         "dotenv": "^10.0.0",
         "install": "^0.13.0",
         "jsonwebtoken": "^8.5.1",
-        "knex": "^0.21.17",
+        "knex": "^0.95.6",
         "koa": "^2.13.1",
         "koa-joi-router": "^8.0.0",
         "koa-jwt": "^4.0.1",
